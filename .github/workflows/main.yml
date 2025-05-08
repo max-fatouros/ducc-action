@@ -1,0 +1,15 @@
+name: main
+
+on:
+  push:
+
+jobs:
+  notify-ducc:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: test script
+        run: |
+          echo testing
+          echo testing newline
