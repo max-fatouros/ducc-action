@@ -1,6 +1,6 @@
 name: main
 
-on: workflow-dispatch
+on: workflow_dispatch
 
 jobs:
   notify-ducc:
