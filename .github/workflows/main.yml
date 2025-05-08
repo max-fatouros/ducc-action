@@ -28,5 +28,5 @@ jobs:
       - name: notify ducc
         run: |
           curl -X "POST" \
-              -H "Authorization:${{ steps.get_token.outputs.token }}" \
+              -H "Authorization: bearer ${{ steps.get_token.outputs.token }}" \
               "${{ env.AUTHENTICATION_SERVER }}:8000/api/github/sync/jwt?image=${{ env.FULL_IMAGE }}"
